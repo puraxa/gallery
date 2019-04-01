@@ -45,9 +45,9 @@ function getImg () {
         let transText = upper(text);
         console.log(transText);
         document.getElementById('gallery').innerHTML += `<div class="card col-4 bg-secondary">
-        <img class="card-img-top" src="${url}" alt="Card image cap" width="200px" height="200px">
+        <img class="card-img-top" src="${url}" alt="${transText} image" width="200px" height="200px">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h5 class="card-title">${transText}</h5>
         </div>
       </div>`;
       }
@@ -56,8 +56,9 @@ function getImg () {
 }
 
 function upper(arr){
+  let retText = '';
   for(let i = 0; i < arr.length - 2 ; i++){
-    arr[i] = arr[i].charAt(0) + arr[i].slice(1);
+    retText += arr[i].charAt(0).toUpperCase() + arr[i].slice(1) + ' ';
   }
-  return arr;
+  return retText;
 }
