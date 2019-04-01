@@ -4,15 +4,17 @@
     <title>Gallery</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="./scripts/script.js"></script>
   </head>
   <body>
-    <div>
+    <div id="hide">
       <label for="email">Email</label>
-      <input type="text" name="email">
+      <input type="text" name="email" id="email">
       <br>
       <label for="password">Password</label>
-      <input type="password" name="password">
-      <button type="button" onclick="">Login</button>
+      <input type="password" name="password" id="password">
+      <button type="button" onclick="login()">Login</button>
+      <p id="error"></p>
     </div>
   </body>
 </html>
