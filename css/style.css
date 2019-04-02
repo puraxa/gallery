@@ -19,3 +19,9 @@ label{
 #error {
   color: rgb(104, 3, 3);
 }
+#gallery-title {
+  width: 100px;
+  margin: auto;
+  font-family: 'Courier New', Courier, monospace;
+  color:  black;
+}

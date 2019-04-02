@@ -44,12 +44,13 @@ function getImg () {
         console.log(text);
         let transText = upper(text);
         console.log(transText);
-        document.getElementById('gallery').innerHTML += `<div class="card col-4 bg-secondary">
+        document.getElementById('gallery').innerHTML += `<div class="card bg-secondary col-xs-6 col-sm-6 col-md-4 col-lg-3">
         <img class="card-img-top" src="${url}" alt="${transText} image" width="200px" height="200px">
         <div class="card-body">
           <h5 class="card-title">${transText}</h5>
         </div>
-      </div>`;
+        </div>`;
+        document.getElementById('gallery-title').style = "display:block";
       }
     }
   }
