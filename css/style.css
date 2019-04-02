@@ -16,3 +16,6 @@ input {
 label{
   color: gray;
 }
+#error {
+  color: rgb(104, 3, 3);
+}
