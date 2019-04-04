@@ -3,26 +3,29 @@
   <head>
     <title>Gallery</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./scripts/script.js"></script>
   </head>
   <body>
-    <div id="hide">
-      <img src="./images/login.png" alt="" width="400px" height="250px">
-      <label for="email">Email</label><br>
-      <input type="text" name="email" id="email" placeholder="Enter email">
+    <div class="container">
+      <div id="hide">
+        <img src="./images/login.png" alt="" width="400px" height="250px">
+        <label for="email">Email</label><br>
+        <input type="text" name="email" id="email" placeholder="Enter email">
+        <br>
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" placeholder="Password"><br><br>
+        <p id="error" style="display:none"></p>
+        <button type="button" onclick="login()" class="btn btn-outline-secondary">Login</button>
+      </div>
       <br>
-      <label for="password">Password</label><br>
-      <input type="password" name="password" id="password" placeholder="Password"><br><br>
-      <p id="error" style="display:none"></p>
-      <button type="button" onclick="login()" class="btn btn-outline-secondary">Login</button>
-    </div>
-    <br>
-    <h2 id="gallery-title" style="display:none">Gallery</h2>
-    <br>
-    <div id="gallery" class="row">
+      <h2 id="gallery-title" style="display:none">Gallery</h2>
+      <br>
+      <div id="gallery" class="row">
 
+      </div>
     </div>
   </body>
 </html>
